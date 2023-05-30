@@ -7,7 +7,8 @@ public class main {
         regra.lerMatrizTerreno();
         regra.sortearTudo();
         regra.lerInformacoesPokemon();
-        Interface inter = new Interface(730, 1370, regra); //Instancia objeto do tipo interface que carrega a interface gráfica do jogo, com os controles.
+        //Instancia objeto do tipo interface que carrega a interface gráfica do jogo, com os controles.
+        Interface inter = new Interface(730, 1370, regra);
         Agent agente = new Agent(inter);
         inter.geraInterface();
         agente.executarAgente();

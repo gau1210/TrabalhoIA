@@ -1,6 +1,6 @@
 public class Pokemon {
     
-    private String nome, descricao, tipo;
+    private String nome, tipo;
     private int identificador;
     private String tipos[];
 
@@ -30,14 +30,6 @@ public class Pokemon {
         this.nome = nome;
     }
 
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
     public String getTipo() {
         return tipo;
     }
@@ -47,7 +39,7 @@ public class Pokemon {
     }
     
     public String toString() {
-        return "Identificador:" + identificador + "\n" + "Nome:" +nome + "\n" + "Descrição:" + descricao + 
+        return "Identificador:" + identificador + "\n" + "Nome:" +nome +
         "\n" + "Tipo(s):" + tipo + "\n";
     }
     

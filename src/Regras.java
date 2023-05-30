@@ -7,14 +7,16 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Regras {
-    private int[][] matrizTerreno = new int[42][42];//matriz que receberá os valores referentes à localização dos terrenos
-    private int[][] matrizElementos = new int[42][42];//posições de pokemons, centro e lojas.
+    //matriz que receberá os valores referentes à localização dos terrenos
+    private int[][] matrizTerreno = new int[42][42];
+    //posições de pokemons, centro e lojas.
+    private int[][] matrizElementos = new int[42][42];
     private int[] posicaoAtual = new int[2];
     private int pokebolas = 25;
     private int sentido;
     private int pontuacao;
     private int identificadorPokemon;
-    private String nomePokemon,descricaoPokemon, tipoPokemon; 
+    private String nomePokemon, tipoPokemon;
     private ArrayList<Pokemon> listaPokemons = new ArrayList<Pokemon>();
     private Pokemon pokemon = new Pokemon();
 
@@ -157,7 +159,6 @@ public class Regras {
     }
         
     private void iniciarAgente(){
-        //19 linhas 24 colunas
         this.matrizElementos[19][24]=AGENTE;
         this.setPosicaoAtual(19, 24);
         this.setSentido(BAIXO);
@@ -293,12 +294,10 @@ public class Regras {
         while (scanner.hasNext()) {     
             this.identificadorPokemon = scanner.nextInt();
             this.nomePokemon = scanner.next();
-            this.descricaoPokemon = scanner.next();
             this.tipoPokemon = scanner.next();
             
             pokemon.setIdentificador(this.identificadorPokemon);
             pokemon.setNome(this.nomePokemon);
-            pokemon.setDescricao(this.descricaoPokemon);
             pokemon.setTipo(this.tipoPokemon);
             String a1[] = this.tipoPokemon.split(",");
             pokemon.setTipos(a1);

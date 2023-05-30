@@ -243,10 +243,9 @@ public class Interface extends JFrame{
         this.setVisible(true);     
         
     }
-    private void adicionarMapa(){//Cria o mapa do jogo e chama o gerador de terrenos
+    private void adicionarMapa(){
         
         mapa.setSize(getLargura()-780, getAltura()-60);
-        //mapa.setSize(588, 672);
         mapa.setLocation(getLargura()-(getLargura()-370), getAltura()-(getAltura()-15));
         mapa.setBackground(Color.black);
         mapa.setLayout(null);

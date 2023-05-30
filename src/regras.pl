@@ -1,29 +1,26 @@
-% -----------------------------Conhecimentos-----------------------------------
-% Para movimentar.
-  :-dynamic coordenadas/2.
-  :-dynamic sentido/1.
- %A respeito dos Pok�mons.
- % pokemon(NOME, CODIGO, TIPO1, TIPO2, TIPO3, TIPO_TERRENO).
-  :-dynamic pokemon/6.
- %A respeito do MAPA.
- %mapa(COORDENADA_X, COORDENADA_Y, TIPO_TERRENO).
-  :-dynamic mapa/3.
- %Para ter conhecimento das coordenadas que j� passou.
+%Movimentar.
+  :-dynamic coordenadas.
+  :-dynamic sentido.
+ %Pokemon(NOME, CODIGO, TIPO1, TIPO2, TIPO3, TIPO_TERRENO).
+  :-dynamic pokemon.
+ %Mapa(COORDENADA_X, COORDENADA_Y, TIPO_TERRENO).
+  :-dynamic mapa.
+ %Conhecimento das coordenadas que ja passou.
  %mapaExplorado(COORDENADA_X, COORDENADA_Y).
-  %:-dynamic mapaExplorado/2.
- %Para as pokebolas.
-  :-dynamic pokebolas/1.
- %Para saber a energia dos Pokemons
-  :-dynamic energia/1.
- %Para saber a quantidade de Pokemons capturados.
-  :-dynamic totalPokemons/1.
- %Para a pontua��o total.
-  :-dynamic pontos/1.
- %Fatos correspondentes � sensores para perceber o ambiente
+ %:-dynamic mapaExplorado.
+ %Pokebolas.
+  :-dynamic pokebolas.
+ %Energia dos Pokemons
+  :-dynamic energia.
+ %Quantidade de Pokemons capturados.
+  :-dynamic totalPokemons.
+ %Pontuação total.
+  :-dynamic pontos.
+ %Fatos correspondentes aos sensores e perceber o ambiente
   estimulo(gritoTreinador). %gritos do treinador
   estimulo(perfumeJoy). %perfume de joy
   estimulo(ouvirVendedor). %agente ouve o vendedor oferencendo pokemons
- %Fatos correspondentes a elementos do ambiente
+ %Elementos do ambiente
   elementosAmbiente(centro).
   elementosAmbiente(loja).
   elementosAmbiente(treinador).
@@ -33,20 +30,19 @@
   terreno(montanha).
   terreno(caverna).
   terreno(vulcao).
- %Tipos que d�o acesso a outros terrenos
+ %Tipos que de acesso a outros terrenos
   acesso('voo').
   acesso('agua').
   acesso('eletrico').
   acesso('fogo').
-%---------------------------FIM CONHECIMENTOS---------------------------
 
-%------------------------------Regras-----------------------------------
-%-------------------------Bloco decidirAcao de movimento----------------
- verificarGiro(SO,SD):-(SO=\=SD),(SO>SD->(giraDireita);((SO<SD)->(giraEsquerda))).%Precisa ser recursivo para girar quantas vezes for necess�rio.
+%Regras de movimento
+
+ verificarGiro(SO,SD):-(SO=\=SD),(SO>SD->(giraDireita);((SO<SD)->(giraEsquerda))).%Precisa ser recursivo para girar quantas vezes for necessário.
  sentidoDesejado(_,Y,_,W,SD,SO):-(Y=\=W),((Y>W)->SD is 0;((Y<W)-> SD is 2;SD is SO)).
  sentidoDesejado(X,_,K,_,SD,SO):-(X=\=K),((X>K)->SD is 3;((X<K)-> SD is 1;SD is SO)).
 
-%Para passar por terrenos de acorodo com o pokemon.
+%Passar por terrenos de acorodo com o pokemon.
  possiveis_caminhos_proximos(K,W):-
                  coordenadas(X,Y),
                  pokemon(_,_,_,_,_,Z),
@@ -64,7 +60,7 @@
                   (K is X-1, W is Y)),
                  mapa(K,W,grama).
 
-% Para verificar os caminhos segundo o sentido.
+%Para verificar os caminhos segundo o sentido.
  segue_sentido_direto(K,W,3):-coordenadas(X,Y),(K is X-1, W is Y).
  segue_sentido_direto(K,W,2):-coordenadas(X,Y),(K is X, W is Y+1).
  segue_sentido_direto(K,W,1):-coordenadas(X,Y),(K is X+1, W is Y).
@@ -87,11 +83,10 @@
           decrementarPontos(1).
 
  decidirAcao:-operacao.
-%---------------------Fim Bloco decidirAcao de movimento----------------
 
-%-----------------Bloco decidirAcao de capturar Pokemon-----------------
+%Capturar Pokemon
 
-%Para armazenar pokemons classificando por terreno.
+%Armazenar pokemons por terreno.
  classificaPokeTerreno(NOME,COD,T1,T2,T3):-(acesso(T1),T1='fogo')->(asserta(pokemon(NOME,COD,fogo,T2,T3,vulcao))).
  classificaPokeTerreno(NOME,COD,T1,T2,T3):-(acesso(T1),T1='agua')->(asserta(pokemon(NOME,COD,agua,T2,T3,agua))).
  classificaPokeTerreno(NOME,COD,T1,T2,T3):-(acesso(T1),T1='eletrico')->(asserta(pokemon(NOME,COD,eletrico,T2,T3,caverna))).
@@ -124,11 +119,9 @@
                                                (COD > 0)->
                                                          capturar(NOMEPOKEMON,COD,TIPO1,TIPO2,TIPO3),
                                                          decidirAcao.
-%-------------Fim Bloco decidirAcao de capturar Pokemon-----------------
 
-%--------------------Bloco decidirAcao para o Centro--------------------
+%Centro Pokemon
 
-%Para recarregar energia dos Pokemons.
  recarregarEnergia:-
                    energia(Carga),
                    ((Carga=\=1)->
@@ -141,11 +134,7 @@
                     (elementosAmbiente(centro))->
                                                 recarregarEnergia,
                                                 decidirAcao.
-%----------------Fim Bloco decidirAcao para o Centro--------------------
-
-%--------------------Bloco decidirAcao para a Loja----------------------
-
-%Para recarregar pokebolas.
+%Loja
  recarregarPokebolas:-
                pokebolas(X),
                Z is X +25,
@@ -156,11 +145,8 @@ decidirAcao(loja):-
                   (elementosAmbiente(loja))->
                                              recarregarPokebolas,
                                              decidirAcao.
-%-----------------Fim Bloco decidirAcao para a Loja--------------------
 
-%--------------------Bloco decidirAcao para o Treinador-----------------
-
-%Para batalhar
+%Treinador Ações
  batalha(GouP):-
               totalPokemons(Qtd),
               energia(Carga),
@@ -190,8 +176,6 @@ decidirAcao(treinador):-
                        (elementosAmbiente(treinador))->
                                                       batalhar,
                                                       decidirAcao.
-%------------------Fim Bloco decidirAcao para o Treinador--------------
-
 
 decidirAcao(gritoTreinador):-
                             (estimulo(gritoTreinador))->
@@ -207,7 +191,8 @@ decidirAcao(ouvirVendedor):-
 
 
 
- %Para passar as informa��es para o java.
+%Informaçoes para o java.
+
  passarInformacoes(CoordenadaX, CoordenadaY, Pontos, Pokebolas, Carga, TotalPokemons,UltCapturado, Sentido):-
                   coordenadas(CoordenadaX, CoordenadaY),
                   pontos(Pontos),
@@ -217,8 +202,8 @@ decidirAcao(ouvirVendedor):-
                   pokemon(_,UltCapturado,_,_,_,_),
                   sentido(Sentido).
 
-%-------------------Regras para setar valores--------------------------
- %Condi��es iniciais.
+%Setar valores
+
   armazenarTerrenos(X,Y,Z):-limites(X,Y),asserta(mapa(X,Y,Z)).
   setarCoordenadas(X,Y):-limites(X,Y), asserta(coordenadas(X,Y)).
   setarSentido(X):-X>=0, X<4, asserta(sentido(X)).
@@ -226,9 +211,9 @@ decidirAcao(ouvirVendedor):-
   setarEnergia(Carga):-asserta(energia(Carga)).
   setarTotalPokemons(Quantidade):-asserta(totalPokemons(Quantidade)).
   setarPontos(Pontos):-asserta(pontos(Pontos)).
-%---------------Fim Regras para setar valores--------------------------
 
-%------------Regras para icrementar ou decrementar pontos---------------
+%Icrementar ou Decrementar pontos
+
  incrementarPontos(Incremento):-
                                pontos(Pontos),
                                NovosPontos is Incremento +Pontos,
@@ -237,21 +222,18 @@ decidirAcao(ouvirVendedor):-
                                pontos(Pontos),
                                NovosPontos is Pontos - Decremento,
                                setarPontos(NovosPontos).
-%---------Fim Regras para icrementar ou decrementar pontos--------------
 
-%----------------------Regra para inicializar---------------------------
+%Regra para inicializar
  inicializar:-
-             setarCoordenadas(24,19),
+             setarCoordenadas(19,24),
              setarSentido(2),
              setarPokebolas(25),
              setarEnergia(1),
              setarTotalPokemons(0),
              setarPontos(0),
              assertz(pokemon(tes,0,tes,tes,tes,tes)).
-%------------------Fim Regra para inicializar---------------------------
 
-%------------------Regras para armazenar coordenadas--------------------
-%Para mudar as coordenadas.
+%Regras para armazenar coordenadas
  armazenaExplorado:-
                    coordenadas(X,Y),
                    asserta(mapaExplorado(X,Y)).
@@ -261,9 +243,9 @@ decidirAcao(ouvirVendedor):-
                          limpaCoordenadas,
                          setarCoordenadas(X,Y).
  limites(X,Y):-X<42,X>=0,Y<42,Y>=0.
-%--------------Fim Regras para armazenar coordenadas--------------------
 
-%------------------------Regras Para girar--------------------------
+
+%Regras Para girar
  limpaSentido:-retractall(sentido(_)).
  sentidoEmCicloEsq(X):-
                       X<4->
@@ -283,7 +265,7 @@ decidirAcao(ouvirVendedor):-
              Z is -1 + Y,
              limpaSentido,
              sentidoEmCicloDir(Z).
-%--------------------Fim Regras Para girar--------------------------
+
 
 
 
