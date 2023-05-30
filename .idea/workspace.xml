@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56fbb0a7-9232-4a95-b299-db0aca0f397f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabalhoIA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Agent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pokemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Regras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arquivos/matriz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arquivos/pokemons.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/agua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/avanca.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/avatarAgua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/avatarCaverna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/avatarGrama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/avatarMontanha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/avatarVulcao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/caverna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/centropoke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/direita.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/esquerda.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/grama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/lojapoke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/montanha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/100MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/101MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/102MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/103MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/104MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/105MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/106MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/107MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/108MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/109MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/10MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/110MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/111MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/112MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/113MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/114MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/115MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/116MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/117MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/118MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/119MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/11MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/120MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/121MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/122MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/123MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/124MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/125MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/126MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/127MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/128MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/129MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/12MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/130MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/131MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/132MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/133MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/134MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/135MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/136MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/137MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/138MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/139MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/13MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/140MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/141MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/142MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/143MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/144MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/145MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/146MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/147MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/148MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/149MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/14MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/150MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/15MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/16MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/17MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/18MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/19MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/1MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/20MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/21MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/22MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/23MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/24MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/25MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/26MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/27MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/28MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/29MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/2MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/30MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/31MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/32MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/33MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/34MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/35MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/36MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/37MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/38MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/39MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/3MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/40MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/41MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/42MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/43MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/44MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/45MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/46MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/47MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/48MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/49MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/4MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/50MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/51MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/52MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/53MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/54MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/55MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/56MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/57MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/58MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/59MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/5MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/60MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/61MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/62MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/63MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/64MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/65MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/66MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/67MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/68MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/69MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/6MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/70MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/71MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/72MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/73MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/74MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/75MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/76MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/77MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/78MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/79MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/7MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/80MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/81MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/82MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/83MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/84MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/85MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/86MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/87MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/88MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/89MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/8MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/90MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/91MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/92MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/93MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/94MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/95MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/96MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/97MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/98MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/99MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/pokemons/9MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/treinadorpoke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/volta.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imagens/vulcao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/regras.pl" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2QT38xIJ3642Ru9sAm4Bc3C1kNQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/glaub/IdeaProjects/TrabalhoIA/src",
+    "onboarding.tips.debug.path": "C:/Users/glaub/IdeaProjects/TrabalhoIA/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\glaub\IdeaProjects\TrabalhoIA\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\glaub\IdeaProjects\TrabalhoIA\src" />
+      <recent name="C:\Users\glaub\IdeaProjects\TrabalhoIA\src\classes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="TrabalhoIA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="TrabalhoIA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56fbb0a7-9232-4a95-b299-db0aca0f397f" name="Changes" comment="" />
+      <created>1685363589497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685363589497</updated>
+    </task>
+    <servers />
+  </component>
+</project>
