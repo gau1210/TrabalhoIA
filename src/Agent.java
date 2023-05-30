@@ -70,16 +70,15 @@ public class Agent {
             regra = inter.elementosDaCasa();
             System.out.println(regra);
             inter.apresentarLog(regra);
-            //-------
-            //comando = "operacao";
+
             comando = inter.elementosDaCasa();
             execucaoComando = new Query(comando);
             execucaoComando.hasMoreSolutions();
-           //-------
+
            
            totpoke=totalPokemons;
            
-           //------
+
             if(totalPokemons>0){
                 comando = "pokemon(NOME,COD,T1,T2,T3,TERRENO)";
                 execucaoComando = new Query(comando);

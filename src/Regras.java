@@ -265,7 +265,7 @@ public class Regras {
         this.varrerMatrizParaSensores();
     }
    
-    //método para ler arquivo txt para preencher a matriz com os terrenos especificos
+    //ler arquivo txt para preencher a matriz
     public void lerMatrizTerreno() throws FileNotFoundException, IOException{
         
 

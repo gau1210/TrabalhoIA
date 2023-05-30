@@ -28,9 +28,18 @@ public class Interface extends JFrame{
     final int PERFUME = 155;    
     final int PROPAGANDA_BOLAS = 156;
     final int DESAFIO = 157;
-    
-    //-----MÉTODO PARA REPASSAR AS INFORMAÇÕES DO PROLOG PARA A INTERFACE JAVA----//
 
+    //CONSTRUTOR//
+    public Interface(int altura, int largura, Regras regra){
+        setAltura(altura);
+        setLargura(largura);
+        defineTipos();
+        defineAvatar();
+        defineElementos();
+        this.setRegras(regra);
+    }
+
+    //INFORMAÇÕES//
     public void repassarInterface(int coordenadaX, int coordenadaY, int pontos, int pokebolas, int carga, int totalPokemons, int ult_capturado, int sentido){
         movimentar(coordenadaY,coordenadaX);
         this.pontos.setText(Integer.toString(pontos));
@@ -59,8 +68,6 @@ public class Interface extends JFrame{
                     break; 
                 } 
         }
-
-        //sentido;
     } 
     
     public void apresentarLog(String log){
@@ -74,14 +81,11 @@ public class Interface extends JFrame{
         
         }
     }
-    
-    //---FIM MÉTODO PARA REPASSAR AS INFORMAÇÕES DO PROLOG PARA A INTERFACE JAVA--//    
+    //INFORMAÇÕES//
 
-    //---------MÉTODO PARA REPASSAR AS INFORMAÇÕES DO JAVA PARA O PROLOG---------//
-    
     public String elementosDaCasa(){
         int i = regras.getPosicaoAtual()[0], j = regras.getPosicaoAtual()[1];
-        Ianterior = i; 
+        Ianterior = i;
         Janterior=j;
         int ele = regras.getMatrizElementos()[i][j];
         System.out.println("Switch "+ele);
@@ -92,32 +96,32 @@ public class Interface extends JFrame{
                 comando="decidirAcao";
                 break;
             case CENTRO:
-                System.out.println("Centro");                
+                System.out.println("Centro");
                 comando="decidirAcao(centro)";
                 break;
             case LOJA:
-                System.out.println("Loja");               
-                comando="decidirAcao(loja)";                
-                break;   
+                System.out.println("Loja");
+                comando="decidirAcao(loja)";
+                break;
             case TREINADOR:
-                System.out.println("Treinador");               
-                comando="decidirAcao(treinador)";                
+                System.out.println("Treinador");
+                comando="decidirAcao(treinador)";
                 break;
             case PERFUME:
-                System.out.println("Perfume");               
+                System.out.println("Perfume");
                 comando="decidirAcao(perfumeJoy)";
                 break;
             case PROPAGANDA_BOLAS:
-                System.out.println("Propaganda Bolas");                
+                System.out.println("Propaganda Bolas");
                 comando="decidirAcao(ouvirVendedor)";
                 break;
             case DESAFIO:
-                System.out.println("Desafio");  
+                System.out.println("Desafio");
                 comando="decidirAcao(gritoTreinador)";
                 break;
             default:
                 if(ele>=1 && ele<=150){
-                    System.out.println("Pokemon: "+ele);  
+                    System.out.println("Pokemon: "+ele);
                     comando="decidirAcao("+regras.getListaPokemons().get(ele-1).stringToProlog()+")";
                     pokedex.setText(regras.getListaPokemons().get(ele-1).toString());
                     codPokeAnt=ele;
@@ -127,11 +131,8 @@ public class Interface extends JFrame{
         }
         return comando;
     }
-    
-    //-----FIM MÉTODO PARA REPASSAR AS INFORMAÇÕES DO JAVA PARA O PROLOG---------//
-    
-    //-------------------------MÉTODOS GET E SET---------------------------------//
-    
+    //GET E SET//
+
     public int getAltura() {
         return altura;
     }
@@ -187,10 +188,7 @@ public class Interface extends JFrame{
     public void setIndexPainelLog(int indexPainelLog) {
         this.indexPainelLog = indexPainelLog;
     }
-    
-    //-------------------------FIM MÉTODOS GET E SET---------------------------------//
-    
-    //-------------------------MÉTODOS GENÉRICOS-------------------------------------//
+
     private void adicionar(Component ob){
         this.add(ob);
     }
@@ -207,20 +205,7 @@ public class Interface extends JFrame{
         posicionarPersonagem(sentidoLin, sentidoCol);
         return true;
     }
-    //-----------------------FIM MÉTODOS GENÉRICOS-----------------------------------//
-    
-    //-------------------------MÉTODO CONSTRUTOR-------------------------------------//
-    public Interface(int altura, int largura, Regras regra){
-        setAltura(altura);
-        setLargura(largura);
-        defineTipos();
-        defineAvatar();
-        defineElementos();
-        this.setRegras(regra);
-    }    
-    //-------------------------FIM MÉTODO CONSTRUTOR--------------------------------//
-    
-    //--------------------MÉTODOS DE DEFINIÇÃO DE ÍCONES----------------------------//
+    //ÍCONES//
     private void defineTipos(){ //Carrega as imagens para os icones que serão usados nos labels;
         tipoter[0] = new ImageIcon(getClass().getResource("imagens/grama.png"));
         tipoter[1] = new ImageIcon(getClass().getResource("imagens/agua.png"));
@@ -247,9 +232,7 @@ public class Interface extends JFrame{
         ImageIcon pokemon = new ImageIcon(getClass().getResource("imagens/pokemons/"+numPok+"MS.png"));
         return pokemon;
     }
-    //--------------------FIM MÉTODOS DE DEFINIÇÃO DE ÍCONES----------------------------//
-
-    //--------------------MÉTODOS DE ELEMENTOS GRÁFICOS----------------------------//    
+    //GRÁFICOS//
     public void geraInterface(){
         this.setSize(getLargura(), getAltura());
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -286,7 +269,6 @@ public class Interface extends JFrame{
             setPosiY(getPosiY()+16);
         }
     }
-    
     public void introduzPokemons(int lin, int col){
         for(int i=0; i<lin; i++){
             for(int j=0; j<col; j++){
