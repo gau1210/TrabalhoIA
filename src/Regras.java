@@ -37,15 +37,6 @@ public class Regras {
     final int BAIXO = 2;
     final int ESQUERDA = 3;
 
-    final int MVFRENTE = -1;
-    final int MVDIREITA = -1;
-    final int MVESQUERDA = -1;
-    final int USAPOKEBOLA = -5;
-    final int PEGAPOKEBOLA = -10;
-    final int RECPOKEMON = -100;
-    final int GANHARBATALHA = 150;
-    final int PERDERBATALHA = -1000;
-        
     public Regras() {
     }
 
@@ -281,6 +272,7 @@ public class Regras {
         
 
         FileReader txtMatriz = new FileReader("src\\arquivos\\matriz.txt");
+
 
         Scanner lerTxt =  new Scanner(txtMatriz).useDelimiter("\n");
         int cont=0, i=0;

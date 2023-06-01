@@ -172,22 +172,6 @@ public class Interface extends JFrame{
         this.regras = regras;
     }
 
-    public int getIndexPainelAtual() {
-        return indexPainelAtual;
-    }
-
-    public void setIndexPainelAtual(int indexPainelAtual) {
-        this.indexPainelAtual = indexPainelAtual;
-    }
-
-    public int getIndexPainelLog() {
-        return indexPainelLog;
-    }
-
-    public void setIndexPainelLog(int indexPainelLog) {
-        this.indexPainelLog = indexPainelLog;
-    }
-
     private void adicionar(Component ob){
         this.add(ob);
     }
