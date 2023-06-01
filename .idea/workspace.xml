@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56fbb0a7-9232-4a95-b299-db0aca0f397f" name="Changes" comment="Projeto Feito">
+    <list default="true" id="56fbb0a7-9232-4a95-b299-db0aca0f397f" name="Changes" comment="Quase finalizado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Agent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Regras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Regras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imagens/centropoke.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/imagens/centropoke.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imagens/lojapoke.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/imagens/lojapoke.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imagens/treinadorpoke.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/imagens/treinadorpoke.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regras.pl" beforeDir="false" afterPath="$PROJECT_DIR$/src/regras.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,11 +120,19 @@
       <option name="project" value="LOCAL" />
       <updated>1685426024102</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Quase finalizado">
+      <created>1685588153509</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685588153509</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Projeto Feito" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projeto Feito" />
+    <MESSAGE value="Quase finalizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quase finalizado" />
   </component>
 </project>

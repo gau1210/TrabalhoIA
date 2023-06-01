@@ -208,7 +208,7 @@ public class Regras {
         }
     }
     
-    private void sortearLoja(){   
+    private void sortearLoja(){
         Random gerador = new Random();
 
          for(int x = 0; x<15; x++){
@@ -218,13 +218,6 @@ public class Regras {
                matrizElementos[i][j] = LOJA;
            }else{x--;}
        }          
-    }
-    private void Treinador(){
-        int i = 0;
-        int j = 2;
-        if(matrizElementos[i][j]==0){
-            matrizElementos[i][j] = TREINADOR;
-        }
     }
     private void sortearTreinador(){
         Random gerador = new Random();
@@ -278,7 +271,6 @@ public class Regras {
         this.sortearPokemon();
         this.sortearCentro();
         this.Centro();
-        this.Treinador();
         this.sortearLoja();
         this.sortearTreinador();
         this.varrerMatrizParaSensores();

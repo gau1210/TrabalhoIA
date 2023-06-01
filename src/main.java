@@ -12,7 +12,5 @@ public class main {
         Agent agente = new Agent(inter);
         inter.geraInterface();
         agente.executarAgente();
-        System.out.println(regra.getListaPokemons().get(0).stringToProlog());
-        
     }
 }

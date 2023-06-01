@@ -43,7 +43,7 @@ public class Agent {
                 inter.apresentarLog(comando);
             }
         }
-       while(totpoke<150){
+       while(totpoke<1){
             comando = "passarInformacoes(CoordenadaX, CoordenadaY, Pontos, Pokebolas, Carga, TotalPokemons, UltCapturado, Sentido)";
             execucaoComando = new Query(comando);
             execucaoComando.hasMoreSolutions();
@@ -93,5 +93,7 @@ public class Agent {
                 }
             }
        }
+        System.out.println("Você atingiu o Objetivo!");
     }
+
 }
