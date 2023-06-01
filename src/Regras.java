@@ -109,9 +109,10 @@ public class Regras {
     }
     
     public int[] determinarMovimento(){
-        int[] coordenadasNovas = new int[2];
+        int[] coordenadasNovas = new int[1];
         coordenadasNovas[0]=this.getPosicaoAtual()[0];
         coordenadasNovas[1]=this.getPosicaoAtual()[1];
+
         switch(this.getSentido()){
             case CIMA:
                 if((--(coordenadasNovas[0]))<0){
@@ -132,7 +133,7 @@ public class Regras {
                 }
                 break;
             case ESQUERDA:
-                if((--(coordenadasNovas[1]))<0){
+                if((--(coordenadasNovas[1]))>0){
                     coordenadasNovas[0]=-1;
                     coordenadasNovas[1]=-1;
                 }                
@@ -159,7 +160,7 @@ public class Regras {
     }
         
     private void iniciarAgente(){
-        this.matrizElementos[19][24]=AGENTE;
+        this.matrizElementos[24][19]=AGENTE;
         this.setPosicaoAtual(19, 24);
         this.setSentido(BAIXO);
     }
@@ -185,16 +186,26 @@ public class Regras {
        }
    }
 
-    private void sortearCentro(){   
-        Random gerador = new Random();
-        
+    private void sortearCentro(){
+
+       Random gerador = new Random();
+
          for(int x = 0; x<20; x++){
+
            int i = gerador.nextInt(matrizElementos.length);
            int j = gerador.nextInt(matrizElementos.length);
            if(matrizElementos[i][j]==0){
                matrizElementos[i][j] = CENTRO;
            }else{x--;}
-       }          
+       }
+    }
+    private void Centro(){
+        int i=19;
+        int j=24;
+
+        if(matrizElementos[i][j]==0){
+            matrizElementos[i][j] = CENTRO;
+        }
     }
     
     private void sortearLoja(){   
@@ -208,8 +219,14 @@ public class Regras {
            }else{x--;}
        }          
     }
-    
-    private void sortearTreinador(){   
+    private void Treinador(){
+        int i = 0;
+        int j = 2;
+        if(matrizElementos[i][j]==0){
+            matrizElementos[i][j] = TREINADOR;
+        }
+    }
+    private void sortearTreinador(){
         Random gerador = new Random();
 
          for(int x = 0; x<50; x++){
@@ -220,7 +237,6 @@ public class Regras {
            }else{x--;}
        }          
     }
-
     private void adicionarEstimulo(int estimulo, int posiI, int posiJ){
         if((posiI!=0)&&(matrizElementos[posiI-1][posiJ]==0)){
             matrizElementos[posiI-1][posiJ] = estimulo;
@@ -261,6 +277,8 @@ public class Regras {
         this.iniciarAgente();
         this.sortearPokemon();
         this.sortearCentro();
+        this.Centro();
+        this.Treinador();
         this.sortearLoja();
         this.sortearTreinador();
         this.varrerMatrizParaSensores();
@@ -270,7 +288,7 @@ public class Regras {
     public void lerMatrizTerreno() throws FileNotFoundException, IOException{
         
 
-        FileReader txtMatriz = new FileReader("src\\arquivos/matriz.txt");
+        FileReader txtMatriz = new FileReader("src\\arquivos\\matriz.txt");
 
         Scanner lerTxt =  new Scanner(txtMatriz).useDelimiter("\n");
         int cont=0, i=0;

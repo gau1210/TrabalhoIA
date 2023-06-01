@@ -13,7 +13,7 @@ public class Interface extends JFrame{
     private int altura, largura, posiX, posiY, indexPainelAtual, indexPainelLog;
     private ArrayList<JLabel> terrenos = new ArrayList<>();
     private ArrayList<JLabel> pokemons = new ArrayList<>();
-    private ImageIcon[] tipoter = new ImageIcon[5]; 
+    private ImageIcon[] tipoter = new ImageIcon[5];
     private ImageIcon[] tipoAvat = new ImageIcon[5]; 
     private ImageIcon[] tipoEle = new ImageIcon[3];
     private JLabel pontos = new JLabel(), pokebolas = new JLabel(), carga = new JLabel(), log = new JLabel(), pokedex = new JLabel();
@@ -68,8 +68,7 @@ public class Interface extends JFrame{
                     break; 
                 } 
         }
-    } 
-    
+    }
     public void apresentarLog(String log){
         this.log.setText(log);
     }
@@ -125,7 +124,7 @@ public class Interface extends JFrame{
                     comando="decidirAcao("+regras.getListaPokemons().get(ele-1).stringToProlog()+")";
                     pokedex.setText(regras.getListaPokemons().get(ele-1).toString());
                     codPokeAnt=ele;
-                    System.out.println("");
+                    System.out.println(" ");
                 }
                 break;
         }
